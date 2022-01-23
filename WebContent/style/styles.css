@@ -1,0 +1,97 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ebe0e0;
+}
+
+#menu li {
+    float: inherit;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: #ff8080;
+}
+body{
+	background-color:#fafafa;
+	  display: flex;
+     align-items: center;
+     justify-content: center;
+	}
+	
+.forme{
+    margin:250px;
+   background: white;
+    width: calc(100% - 50px);
+    padding:20px 20px 6px ;
+    box-shadow:0px 2px 5px black;
+    border-radius: 5px;
+    backdrop-filter: blur( 30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+  
+}
+.forme:before{
+  content: "\27B2" ;
+  position:absolute;
+  top:14px;
+  right: 20px;
+  font-size: 2.7rem;
+}
+.formItem{
+	padding:12px;
+    vertical-align: middle;
+ }
+ input,select{
+   height: 50px;
+   width: 200px;
+ }
+
+input[type="submit"]{
+     background:red;
+     cursor: pointer; 
+     font-size: 1.3rem;
+     padding: 10px 20px;
+     border-radius: 150px;
+     margin: 0 auto;
+     display: block;
+     transition: 0.1s
+}
+input[type="submit"]:hover{
+    background: orchid;
+    color: white;
+    cursor:pointer;
+    letter-spacing: 3px;
+    
+}
+ p{
+   
+  color: grey;
+  position: absolute;
+  top: 25%;
+  left:57%;
+  text-transform: uppercase;
+  font-size: 35px;
+   font-family:fantasy;
+ }
+      
+

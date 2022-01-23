@@ -1,0 +1,94 @@
+:root{
+	--color1: #ebe0e0;
+	--color2:#ff8080;
+	--color3:black;
+	--color4:#ffffff;
+}
+
+@font-face{
+    font-family: "font-1";
+    src: url(assets/Merriweather-Bold.ttf)
+}
+body{
+
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: var(--color4) fixed center/cover;
+     overflow: hidden;
+}
+
+p{
+	font-family:font-1;
+ text-transform: uppercase;
+ padding-left: 65px;
+ font-weight: bold;
+}
+.form{
+	
+	background-color: transparent;
+    overflow: visible;
+    padding: 0;
+    width: 432px;
+
+}
+
+input{
+	padding: 5px;
+	margin:10px;
+	border:1px solid grey;
+	border-radius: 6px;
+	font-family: font-1;
+	font-size: 1.1rem;
+}
+form{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	"i1 i1"
+	"i2 i3"
+	"i4 i4"
+	"i5 i5" 
+	"i6 i7"
+	"bt bt"
+	
+}
+
+#type{
+    grid-area: i1;
+}
+#nom{
+    grid-area: i2;
+}
+
+#prenom{
+   grid-area: i3;
+}
+#datnais{
+    grid-area: i4;
+  ;
+}
+#mail{
+    grid-area: i5;
+  ;
+}
+#password{
+    grid-area: i6;
+  ;
+}
+#password_bis{
+    grid-area: i7;
+  ;
+}
+input[type="submit"]{
+    grid-area: bt;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+	background: var(--color2);
+	}
+input[type="submit"]:focus { 
+	border : 2px solid; 
+	}
